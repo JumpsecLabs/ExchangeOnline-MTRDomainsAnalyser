@@ -6,7 +6,7 @@ A PowerShell script that analyses approved and rejected domains specified via Ma
 ## Overview
 This PowerShell script analyses Exchange Online Mail Transport Rules (MTRs) to systematically categorise domains and IP addresses into Approved, Rejected, or Uncategorised groups based on rule configurations. It helps enhancing your email security posture by clearly identifying allowed and blocked domains/IPs, assisting in building robust allow and deny lists for your tenant.
 
-This script is designed to be used independently or alongside [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), enriching your existing auditing capabilities with detailed categorisation and conflict identification.
+This script is designed to be used independently or alongside [ExchangeOnline-MTRAnalyser](https://github.com/JumpsecLabs/ExchangeOnline-MTRAnalyser), enriching your existing auditing capabilities with detailed categorisation and conflict identification.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ Set-ExecutionPolicy RemoteSigned
 
 ## Usage
 ```powershell
-.\ExchangeOnline-MTR_Domains.ps1 [-oA approved.txt] [-oR rejected.txt] [-oU uncategorised.csv] [-oE excluded.txt] [-Lookup domainname.com] [-ShowConflicts] [-Help] [-Verbose]
+.\ExchangeOnline-MTRDomainAnalyser.ps1 [-oA approved.txt] [-oR rejected.txt] [-oU uncategorised.csv] [-oE excluded.txt] [-Lookup domainname.com] [-ShowConflicts] [-Help] [-Verbose]
 ```
 
 ### Parameters
@@ -56,21 +56,21 @@ Set-ExecutionPolicy RemoteSigned
 ### Example
 To categorise rules and output results:
 ```powershell
-.\ExchangeOnline-MTR_Domains.ps1 -oA approved.txt -oR rejected.txt -oU uncategorised.csv -oE excluded.txt
+.\ExchangeOnline-MTRDomainAnalyser.ps1 -oA approved.txt -oR rejected.txt -oU uncategorised.csv -oE excluded.txt
 ```
 
 To look up a specific domain:
 ```powershell
-.\ExchangeOnline-MTR_Domains.ps1 -Lookup example.com
+.\ExchangeOnline-MTRDomainAnalyser.ps1 -Lookup example.com
 ```
 
 To show detailed conflict information:
 ```powershell
-.\ExchangeOnline-MTR_Domains.ps1 -ShowConflicts
+.\ExchangeOnline-MTRDomainAnalyser.ps1 -ShowConflicts
 ```
 
 ## Integration
-This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), which focuses on broader MTR audit capabilities. Integrating both tools can help you have better visibility into Exchange Mail Transport Rules and enhance your overall email security analysis.
+This script complements the [ExchangeOnline-MTRAnalyser](https://github.com/JumpsecLabs/ExchangeOnline-MTRAnalyser), which focuses on broader MTR audit capabilities. Integrating both tools can help you have better visibility into Exchange Mail Transport Rules and enhance your overall email security analysis.
 
 ## Output Interpretation
 - **Approved Domains/IPs**: Domains or IPs explicitly trusted to bypass standard security filters.
