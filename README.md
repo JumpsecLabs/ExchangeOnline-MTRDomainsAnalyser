@@ -8,6 +8,22 @@ This PowerShell script analyses Exchange Online Mail Transport Rules (MTRs) to s
 
 This script is designed to be used independently or alongside [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), enriching your existing auditing capabilities with detailed categorisation and conflict identification.
 
+## Requirements
+
+- **Exchange Online Management Module**: Ensure the ExchangeOnline PowerShell module is installed.
+
+```powershell
+Install-Module ExchangeOnlineManagement -Scope CurrentUser
+Import-Module ExchangeOnlineManagement
+```
+
+- **PowerShell 5.1 or higher**: Required for compatibility and module functionality.
+- **Execution Policy**: Set your execution policy to `RemoteSigned` or `Unrestricted`:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
 ## Key Features
 
 - **Approved and Rejected Domains/IPs**: Automatically classifies domains/IPs based on explicit conditions defined within your Exchange Online Transport Rules.
@@ -63,12 +79,12 @@ This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLa
 - **Excluded Domains/IPs (Conflicts)**: Domains/IPs appearing in both approved and rejected lists, highlighting configuration issues.
 
 ## Recommendations
-Run this script to check maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
+Run this script to maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
 
 ---
 
 ### Author
 
-Made by Fr4n 
+Made by Fr4n  
 @JUMPSEC
 
