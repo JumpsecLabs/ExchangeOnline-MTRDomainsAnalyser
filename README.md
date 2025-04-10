@@ -4,7 +4,7 @@
 A PowerShell script that analyses approved and rejected domains specified via Mail Transport Rules in Exchange Online, leveraging the ExchangeOnline PowerShell Module.
 
 ## Overview
-This PowerShell script analyses Exchange Online Mail Transport Rules (MTRs) to systematically categorise domains and IP addresses into Approved, Rejected, or Uncategorised groups based on rule configurations. It enhances your email security posture by clearly identifying allowed and blocked domains/IPs, assisting in building robust allow and deny lists for your tenant.
+This PowerShell script analyses Exchange Online Mail Transport Rules (MTRs) to systematically categorise domains and IP addresses into Approved, Rejected, or Uncategorised groups based on rule configurations. It helps enhancing your email security posture by clearly identifying allowed and blocked domains/IPs, assisting in building robust allow and deny lists for your tenant.
 
 This script is designed to be used independently or alongside [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), enriching your existing auditing capabilities with detailed categorisation and conflict identification.
 
