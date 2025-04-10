@@ -61,7 +61,7 @@ This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLa
 - **Excluded Domains/IPs (Conflicts)**: Domains/IPs appearing in both approved and rejected lists, highlighting configuration issues.
 
 ## Recommendations
-Rrun this script to check maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
+Run this script to check maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
 
 ---
 
