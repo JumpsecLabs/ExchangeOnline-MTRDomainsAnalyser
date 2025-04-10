@@ -9,7 +9,7 @@ param(
 )
 
 if ($Help) {
-    Write-Host "Usage: .\ExchangeOnline-MTR_Domains.ps1 [-oA approved.txt] [-oR rejected.txt] [-oU uncategorised.csv] [-oE excluded.txt] [-Lookup domainname.com] [-ShowConflicts] [-Help] [-Verbose]" -ForegroundColor Cyan
+    Write-Host "Usage: .\ExchangeOnline-MTRDomainAnalyser.ps1 [-oA approved.txt] [-oR rejected.txt] [-oU uncategorised.csv] [-oE excluded.txt] [-Lookup domainname.com] [-ShowConflicts] [-Help] [-Verbose]" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "   -oA             Specifies the output file for approved domains/IPs."
     Write-Host "   -oR             Specifies the output file for rejected domains/IPs."
