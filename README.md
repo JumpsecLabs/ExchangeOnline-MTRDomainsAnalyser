@@ -1,7 +1,5 @@
-# ExchangeOnline-MTR_Domains
+# ExchangeOnline-MTR_Domains - Exchange Online Mail Transport Rules' Domain/IP Categorisation
 A PowerShell script that analyses approved and rejected domains specified via Mail Transport Rules in Exchange Online, leveraging the ExchangeOnline PowerShell Module.
-
-# Exchange Online MTR Domain/IP Categorisation Script
 
 ## Overview
 This PowerShell script analyses Exchange Online Mail Transport Rules (MTRs) to systematically categorise domains and IP addresses into Approved, Rejected, or Uncategorised groups based on rule configurations. It enhances your email security posture by clearly identifying allowed and blocked domains/IPs, assisting in building robust allow and deny lists for your tenant.
