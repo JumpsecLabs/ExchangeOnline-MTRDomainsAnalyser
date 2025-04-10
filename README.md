@@ -16,7 +16,7 @@ This script is designed to be used independently or alongside [JumpsecLabs' MTR-
 
 ## Benefits
 - Enhances clarity and accuracy in managing Exchange Online Transport Rules.
-- Improves the security and integrity of email flows by systematically identifying allowed and disallowed senders.
+- Helps improving the security and integrity of email flows by identifying allowed and disallowed senders.
 - Reduces administrative overhead by automating the classification and detection of conflicts.
 - Facilitates proactive security by clearly defining tenant-wide allow/deny lists.
 
@@ -52,7 +52,7 @@ To show detailed conflict information:
 ```
 
 ## Integration
-This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), which focuses on broader MTR audit capabilities. Integrating both tools can significantly enhance your email security analysis.
+This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLabs/MTR-Analyser), which focuses on broader MTR audit capabilities. Integrating both tools can help you have better visibility into Exchange Mail Transport Rules and enhance your overall email security analysis.
 
 ## Output Interpretation
 - **Approved Domains/IPs**: Domains or IPs explicitly trusted to bypass standard security filters.
@@ -61,7 +61,7 @@ This script complements [JumpsecLabs' MTR-Analyser](https://github.com/JumpsecLa
 - **Excluded Domains/IPs (Conflicts)**: Domains/IPs appearing in both approved and rejected lists, highlighting configuration issues.
 
 ## Recommendations
-Regularly run this script to maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
+Rrun this script to check maintain an up-to-date categorisation of domains/IPs, preventing rule misconfigurations and ensuring optimal email security management.
 
 ---
 
